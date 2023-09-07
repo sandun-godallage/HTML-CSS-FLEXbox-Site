@@ -1,0 +1,208 @@
+/*coman tag*/
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0%;
+}
+body{
+    font-size: 16px;
+    color: #333;
+    background-color: #a1c3ff;
+}
+
+img{
+    max-width: 100%;
+}
+
+h1, h2{
+    margin-bottom: 15px;
+}
+
+ul li{
+    list-style: none;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+/*nav bar*/
+nav {
+    background-color: #3474e6;
+    color: #fff;
+    height: 60px;
+}
+nav .logo{
+    font-size: x-large;
+    font-weight: bold;
+}
+.container .logo a{
+    text-decoration: none;
+    color: #fff
+}
+nav ul li a{
+   color: #fff;
+   text-decoration: none;
+   font-size: 18px;
+   font-weight: bold; 
+}
+nav ul li a:hover{
+    color: lightblue;
+}
+nav .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-left: 20px;
+}
+/*heade*****/
+header{
+    background-color: 	#0151cc;
+    color: #fff;
+    min-height: 400px;
+}
+header h1{
+    font-size: 3rem;
+    font-weight: bold;
+    line-height: 1.2;
+}
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/*sectione*****/
+.boxse .container{
+    display: flex;
+    justify-content: space-between;
+}
+.box{
+    background-color: #0151cc;
+    color: #fff;
+    margin: 20px 10px;
+    box-shadow: 0 3px 5px rgba(97, 41, 41, 0.6);
+    padding: 15px 20px;
+    border-radius: 10px;
+}
+/*About peg***/
+.about .container{
+    display: flex;
+}
+.about .who-we-are, .about .what-we-do{
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.about .who-we-are img, .about .what-we-do img{
+    max-width: 50%;
+}
+/* Contact peg***/
+.container .contact{
+    display: flex;
+    padding: 20px;
+}
+.contact .map{
+    max-width: 50%;
+    flex-basis: 50%;
+    
+}
+.contact .contact-form{
+    flex-basis: 50%;
+        
+}
+.contact .contact-form input[type="text"],
+.contact .contact-form input[type="email"]{
+    height: 40px;
+    width: 100%;
+    margin-bottom: 30px;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+}
+.contact .contact-form input[type="button"]{
+    border: none;
+    padding: 20px;
+    background:transparent;
+    background-color: #1c5fc4;
+    box-shadow: 5px 5px 5px rgb(4, 38, 88);
+    border-radius: 5px;
+    font-size:  15px;
+}
+.contact .contact-form label{
+    font-size: 25px;
+    color: #fff;
+}
+.contact .contact-form{
+    padding: 15px;
+    background-color: #4d6fa3;
+    border-radius: 5px;
+}
+footer{
+    background-color: #3474e6;
+    color: #fff;
+    height: 60px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+/* media qwari */
+@media(max-width:768px){
+    nav .container{
+       flex-direction: column;
+       text-align: center; 
+    }
+    nav ul li{
+        margin-left: 0px ;
+    }
+    .container ul{
+        flex-direction: column;
+        padding-bottom: 5px;
+    }
+    .container ul li a:hover{
+        color: #0439ac;
+        
+    }
+    nav{
+        height: 6rem;
+    }
+    header .container{
+        flex-direction: column;
+        
+    }
+    header .container div{
+        text-align: center; 
+    }
+    header .container img{
+        max-width: 50%;
+        margin-top: 20px;
+    }
+    header .container h1{
+        font-size: 1.5rem;
+        margin-top: 10px;
+    }
+    header .container p{
+        width: 100%;
+    }    
+    .boxse .container{
+        flex-direction: column;
+    }
+    .about .container{
+        flex-direction: column;
+    }
+    .container .contact{
+        flex-direction: column;    
+    }
+    .container .contact .map{
+        max-width: 100%;
+        margin-top: 5px;
+        order: 2;
+    }
+
+
+}
